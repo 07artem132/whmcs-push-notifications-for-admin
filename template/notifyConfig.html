@@ -1,0 +1,46 @@
+<script src="/modules/addons/PushNotificationsForAdmin/js/config.js"></script>
+<div class="row">
+    <div class="col-md-12 text-left">
+        <form id="NotifyConfig" method="post">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="notify[enable]" value="on" id="EnableNotify">
+                <label class="form-check-label" for="EnableNotify">
+                    Включить уведомления
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="on" name="notify[newTickets]" id="NotifyTickets">
+                <label class="form-check-label" for="NotifyTickets">
+                    Получать уведомления о новых тикетах
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="on" name="notify[TicketsReply]"
+                       id="NotifyTicketsReply">
+                <label class="form-check-label" for="NotifyTicketsReply">
+                    Получать уведомления об ответах на тикеты
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="on" name="notify[newOrder]" id="NotifyOrder">
+                <label class="form-check-label" for="NotifyOrder">
+                    Получать уведомления о новых заказах
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="on" name="notify[PaidOrder]" id="NotifyPaidOrder">
+                <label class="form-check-label" for="NotifyPaidOrder">
+                    Получать уведомления о новых оплаченных заказах
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="NotifyAudio">
+                    Ссылка на аудио которое будет использоваться при уведомлениях (работает только если у вас открыта
+                    вкладка с админкой в фоне):
+                </label>
+                <input class="form-check-input" type="url" size="100" name="notify[AudioUrl]" id="NotifyAudio">
+            </div>
+            <button type="submit">Соханить изменения</button>
+        </form>
+    </div>
+</div>
